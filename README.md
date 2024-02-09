@@ -41,12 +41,12 @@ Set up a React application with routing and lazy loading for optimized performan
 ## Submission
 
 1. Commit and push your changes to your GitHub repository.
-2. Share the repository link with the Qilin Software Lab hiring team by [insert deadline].
+2. Share the repository link with the Qilin Software Lab hiring team within 48hrs after receiving this assessment.
 3. Include a README.md file in your repository with any additional notes or explanations about your code.
 
 Good luck! If you have any questions or need clarification, feel free to reach out.
 
 Best regards,
-[Your Name]
-[Your Title]
+Himanshu Barmola
+Frontend Tech Lead,
 Qilin Software Lab
