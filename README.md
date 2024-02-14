@@ -1,52 +1,56 @@
-# Qilin Software Lab - Junior React Developer Pre-Assessment
+This project contains various React components developed for different tasks.
 
-Welcome to the Junior React Developer pre-assessment for Qilin Software Lab. This assessment is designed to evaluate your React.js skills. Please follow the instructions below to complete the assessment.
+Instructions
+Clone the repository to your local machine:
 
-## Task Overview
+git clone <repository_url>
+Navigate to the project directory:
 
-### 1. Form Validation (File: RegistrationForm.js)
+cd react-components-project
+Install dependencies using npm or yarn:
 
-Create a React component named RegistrationForm that includes a form for user registration. Implement form validation to ensure that the user enters a valid email address, a password with at least 8 characters, and a matching password confirmation. Provide appropriate error messages.
 
-### 2. API Integration and Display (File: GitHubUser.js)
+npm install
+or
+yarn install
+Run the development server:
 
-Build a React component named GitHubUser that takes a GitHub username as a prop and fetches the user's information from the GitHub API. Display the user's profile picture, username, and a list of repositories. Handle loading and error states gracefully.
 
-### 3. Context API for Theme (File: ThemeSwitcher.js)
+npm start
+This will start the development server and open the application in your default web browser. If it doesn't open automatically, you can access it at http://localhost:3000.
 
-Implement a theme-switching feature using the Context API. Create a ThemeContext that manages the current theme (light or dark). Build two child components, LightTheme and DarkTheme, that display content differently based on the selected theme. Include a button in a parent component to toggle between themes.
+Components
+1. Navbar Component
+Description:
+A simple React navbar component with navigation links for Home and About pages using React Router.
 
-### 4. Higher-Order Component (HOC) (File: Logger.js)
+How to Use:
+The navbar component is styled using inline CSS for simplicity. You can customize the styles according to your preferences by modifying the styles in the Navbar.js file.
+The project uses React Router for handling navigation between different pages. Make sure you have react-router-dom installed as a dependency.
+You can add more routes and pages as needed by extending the App.js file and creating additional components.
+2. Theme Switcher Component
+Description:
+A theme-switching feature implemented using the Context API. It includes a ThemeContext that manages the current theme (light or dark) and child components (LightTheme and DarkTheme) that display content differently based on the selected theme. A button in a parent component is used to toggle between themes.
 
-Develop a higher-order component named `Logger` that logs the lifecycle methods of a wrapped component. Wrap a simple component with the `Logger` HOC and observe the lifecycle events in the console.
+How to Use:
+The ThemeSwitcher component provides a button to toggle between light and dark themes.
+The LightTheme and DarkTheme components consume the theme context to render content differently based on the selected theme.
+The entire application is wrapped with ThemeProvider to make the theme context available throughout the component tree.
+3. Higher-Order Component (HOC)
+Description:
+A higher-order component named Logger that logs the lifecycle methods of a wrapped component. It wraps a simple component with the Logger HOC and observes the lifecycle events in the console.
 
-### 5. Routing and Lazy Loading (Files: App.js, Home.js, About.js)
+How to Use:
+The Logger HOC logs lifecycle methods such as componentDidMount, componentDidUpdate, and componentWillUnmount of the wrapped component.
+It can be applied to any component by wrapping it with Logger.
+4. Routing and Lazy Loading
+Description:
+A React application with two pages, Home and About, implemented using React Router for navigation. Lazy loading is implemented for the About page to optimize the initial loading performance.
 
-Set up a React application with routing and lazy loading for optimized performance. Create two pages, `Home` and `About`, and use React Router to navigate between them.
+How to Use:
+The application provides navigation between the Home and About pages using React Router.
+Lazy loading is applied to the About page to load it asynchronously, improving initial loading performance.
+Additional Notes
+First time implementing the Lazy loading
+But overall Tasks for that much hard i would say
 
-## Getting Started
-
-1. Fork this repository to your GitHub account.
-2. Clone the forked repository to your local machine.
-3. Navigate to the project directory: `cd Qilin-React-Dev-Challenge`.
-4. Install dependencies: `npm install` or `yarn install`.
-
-## Task Implementation
-
-1. Open each respective file (`RegistrationForm.js`, `GitHubUser.js`, `ThemeSwitcher.js`, `Logger.js`, `App.js`, `Home.js`, `About.js`).
-2. Implement the required tasks in each file as per the provided instructions.
-3. Ensure that your code is clean, organized, and follows React best practices.
-4. Test your components thoroughly to ensure correctness.
-
-## Submission
-
-1. Commit and push your changes to your GitHub repository.
-2. Share the repository link with the Qilin Software Lab hiring team within 48hrs after receiving this assessment.
-3. Include a README.md file in your repository with any additional notes or explanations about your code.
-
-Good luck! If you have any questions or need clarification, feel free to reach out.
-
-Best regards,
-Himanshu Barmola
-Frontend Tech Lead,
-Qilin Software Lab
