@@ -2,6 +2,7 @@ import React from 'react';
 import { useTheme } from './ThemeContext';
 
 const DarkTheme = () => {
+    // here we taking the theme from the parent component porvider and desturcture it in theme and showing it
   const { theme } = useTheme();
 
   return (

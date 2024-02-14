@@ -18,6 +18,8 @@ export default function App({}) {
       {/* Add any additional instructions or guidance for candidates here */}
       <RegistrationForm/>
       <GitHubUser/>
+      {/* here we are wrappin all the child compoentn that needed the theme and toggle fucntionlity
+       in a provider component */}
       <ThemeProvider>
       <div>
         <ThemeSwitcher />
