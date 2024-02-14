@@ -1,5 +1,10 @@
 import React from "react";
 import RegistrationForm from "./component/RegistrationForm";
+import GitHubUser from "./component/GitHubUser";
+import { ThemeProvider } from "./component/theme/ThemeContext";
+import ThemeSwitcher from "./component/theme/ThemeSwitcher";
+import LightTheme from "./component/theme/LightTheme";
+import DarkTheme from "./component/theme/DarkTheme";
 
 export default function App({}) {
   return (
@@ -12,6 +17,14 @@ export default function App({}) {
       </p>
       {/* Add any additional instructions or guidance for candidates here */}
       <RegistrationForm/>
+      <GitHubUser/>
+      <ThemeProvider>
+      <div>
+        <ThemeSwitcher />
+        <LightTheme />
+        <DarkTheme />
+      </div>
+    </ThemeProvider>
     </div>
   );
 }
