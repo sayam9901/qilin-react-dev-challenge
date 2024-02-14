@@ -5,6 +5,12 @@ import { ThemeProvider } from "./component/theme/ThemeContext";
 import ThemeSwitcher from "./component/theme/ThemeSwitcher";
 import LightTheme from "./component/theme/LightTheme";
 import DarkTheme from "./component/theme/DarkTheme";
+import Logger from "./component/HOC/Logger";
+import ExampleComponent from "./component/HOC/ExampleComponent";
+
+// here ComponentWithLogging is a Hoc which wrap a another component as paramerter
+
+const ComponentWithLogging = Logger(ExampleComponent);
 
 export default function App({}) {
   return (
@@ -27,6 +33,10 @@ export default function App({}) {
         <DarkTheme />
       </div>
     </ThemeProvider>
+    {/* here we are diplaying a HOC */}
+    <div>
+      <ComponentWithLogging />
+    </div>
     </div>
   );
 }
