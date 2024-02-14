@@ -1,4 +1,5 @@
 import React from "react";
+import RegistrationForm from "./component/RegistrationForm";
 
 export default function App({}) {
   return (
@@ -10,6 +11,7 @@ export default function App({}) {
         and start working on the assessment tasks.
       </p>
       {/* Add any additional instructions or guidance for candidates here */}
+      <RegistrationForm/>
     </div>
   );
 }
