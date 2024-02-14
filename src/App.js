@@ -7,6 +7,10 @@ import LightTheme from "./component/theme/LightTheme";
 import DarkTheme from "./component/theme/DarkTheme";
 import Logger from "./component/HOC/Logger";
 import ExampleComponent from "./component/HOC/ExampleComponent";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./component/Router/About";
+import Home from "./component/Router/Home";
+import Navbar from "./component/Router/Navbar";
 
 // here ComponentWithLogging is a Hoc which wrap a another component as paramerter
 
@@ -37,6 +41,18 @@ export default function App({}) {
     <div>
       <ComponentWithLogging />
     </div>
+     {/* this is concept of routing in the react we have browserROuter that Top
+     after that we can create routes for every page like home and about 
+     after that we connect roites with the component using the route */}
+    <BrowserRouter>
+      <div>
+        <Navbar/>
+        <Routes>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
     </div>
   );
 }
